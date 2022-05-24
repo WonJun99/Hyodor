@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "173627580669",
+    "project_id": "hyodor-8cfa6",
+    "storage_bucket": "hyodor-8cfa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173627580669:android:c6338e290b522e0fdb5e94",
+        "android_client_info": {
+          "package_name": "com.example.hyodor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173627580669-5nrq5bjhkp4tmjum30rlj8l3j40g5pp7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-jqyeUCd-ClCAPcxF5d_LfZtsS-SymRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173627580669-5nrq5bjhkp4tmjum30rlj8l3j40g5pp7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
