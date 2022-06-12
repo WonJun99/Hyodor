@@ -35,7 +35,7 @@ public class SignupActivity extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
     }
 
-    @Override public void onBackPressed(){
+    @Override public void onBackPressed(){ //뒤로가기 누르면 종료
         super.onBackPressed();
         moveTaskToBack(true);
         android.os.Process.killProcess(android.os.Process.myPid());

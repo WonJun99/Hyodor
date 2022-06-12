@@ -28,6 +28,13 @@ public class MainActivity extends AppCompatActivity {
     private FragHearth fragHearth;
     private FragMypage fragMypage;
 
+    @Override public void onBackPressed(){ //뒤로가기 누르면 종료
+        super.onBackPressed();
+        moveTaskToBack(true);
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,8 +71,7 @@ public class MainActivity extends AppCompatActivity {
         fragMypage = new FragMypage();
         setFrag(0); //첫 화면 선택
 
-        //////////////////////회원가입 모듈//////////////////////////////
-        if(FirebaseAuth.getInstance().getCurrentUser() == null){
+        if(FirebaseAuth.getInstance().getCurrentUser() == null){ //로그아웃버튼
             startLoginActivity();
         }
         findViewById(R.id.logoutButton).setOnClickListener(onClickListener);
@@ -88,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this,LoginActivity.class);
         startActivity(intent);
     }
-        //////////////////////회원가입 모듈//////////////////////////////
 
     private void setFrag(int n){        // 교체가 일어나는 실행문
         fm = getSupportFragmentManager();
